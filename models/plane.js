@@ -1,0 +1,27 @@
+const mongoose = require('mongoose')
+
+const planeSchema = mongoose.Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  price: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String,
+    required: true
+  },
+  capacity: {
+    type: String,
+    required: true
+  },
+  planeImage: {
+    type: String,
+    required: true
+  },
+})
+
+
+module.exports = mongoose.model('Plane', planeSchema)
